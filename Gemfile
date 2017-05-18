@@ -36,6 +36,11 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Debug Gems
+  gem "better_errors"
+  gem "binding_of_caller"
+
+
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
