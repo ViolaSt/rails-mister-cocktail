@@ -1,10 +1,16 @@
-<h1>Cocktails</h1>
+<p id="notice"><%= notice %></p>
 
-<table class="table table-striped">
+<div class="container">
+<h1 class="text-center">My Cocktails</h1>
+
+
+
+<table class="table table-stripet">
   <thead>
     <tr>
       <th>Name</th>
-      <th>Dose description</th>
+      <th>Description</th>
+
       <th>Ingredients</th>
       <th colspan="3"></th>
     </tr>
@@ -16,7 +22,7 @@
         <td><%= cocktail.name %></td>
         <td><%= link_to 'Show', cocktail %></td>
         <td><%= link_to 'Edit', edit_cocktail_path(cocktail) %></td>
-        <td><%= link_to 'Destroy', cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Remove', cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -25,3 +31,4 @@
 <br>
 
 <%= link_to 'New Cocktail', new_cocktail_path %>
+</div>

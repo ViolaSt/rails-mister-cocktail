@@ -3,7 +3,7 @@
 
   <div class="form-inputs">
     <%= f.input :description %>
-    <%= f.association :ingredient, collection: Ingredient.all %>
+    <%= f.association :ingredient, collection: @ingredients %>
     <%= f.hidden_field :cocktail_id, value: @cocktail.id %>
     <%= f.submit "Add a description", class: "btn btn-primary"  %>
 
